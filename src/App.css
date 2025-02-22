@@ -2,15 +2,70 @@
   margin: 16px;
 }
 
-ul {
+.fighters-container {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border-radius: 8px;
 }
 
-li {
-  list-style: none;
-  margin: 8px;
-  padding: 8px;
-  border: whitesmoke 3px solid;
+.flexFighter {
+  background-color: #333;
+  color: white;
   border-radius: 8px;
+  border-color: white !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  width: 150px;
+  text-align: center;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flexFighter img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0; /* Rounded corners for the image */
+}
+
+.flexFighter .fighter-details {
+  width: 100%;
+  padding: 10px;
+  background-color: #1e1e1e;
+  border-radius: 0 0 8px 8px;
+}
+
+.flexFighter h3 {
+  margin: 10px 0 5px;
+  font-size: 16px;
+}
+
+.flexFighter p {
+  margin: 2px 0;
+  font-size: 14px;
+}
+
+.flexFighter button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.flexFighter button:hover {
+  background-color: #0056b3;
+}
+
+li{
+  list-style: none;
 }
